@@ -43,6 +43,7 @@ export const SectionList: React.FC = () => {
 
     for (let i = 0; i < e.target.files.length; i++) {
       const file = e.target.files[i];
+      // file.name = 'hogehogehogehoge' + file.name;
       // file.nameから拡張子を取り除いたものをnameに設定
       const name = file.name.replace(/\.[^/.]+$/, '');
 
